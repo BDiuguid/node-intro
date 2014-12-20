@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "node-intro",
+    "packageVersion": "0.1.0",
+    "revealTheme": "default",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "bdiuguid",
+    "githubRepository": "node-intro"
+  }
+}

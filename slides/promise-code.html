@@ -1,0 +1,9 @@
+<p>The Promise Way.</p>
+<p>Each promise returns a promise. Every promise has a then method.</p>
+<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; max-height: 500px;">
+    then(fulfilledHandler, errorHandler, progressHandler)
+
+    getUser("Domenic")
+    .then(getBestFriend, ui.error)
+    .then(ui.showBestFriend, ui.error);
+</code></pre>
