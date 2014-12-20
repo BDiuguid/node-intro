@@ -1,0 +1,15 @@
+<h3>Hello World</h3>
+<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; max-height: 500px;">
+    var express = require('express');
+
+    var app = express();
+
+    app.get('/', function(request, response) {
+        response.send('hello world from express!');
+    });
+
+    app.listen(8000);
+
+    console.log("Server running at http://127.0.0.1:8000/");
+</code></pre>
+<p>response sending text/html</p>

@@ -1,0 +1,16 @@
+<p>The ugly callback way.</p>
+<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; max-height: 500px;">
+    getUser("Domenic", function (err, user) {
+        if (err) {
+            ui.error(err);
+        } else {
+            getBestFriend(user, function (err, friend) {
+                if (err) {
+                    ui.error(err);
+                } else {
+                    ui.showBestFriend(friend);
+                }
+            });
+        }
+    });
+</code></pre>
