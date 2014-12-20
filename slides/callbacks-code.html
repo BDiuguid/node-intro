@@ -1,3 +1,13 @@
-<h2>callbacks-code</h2>
+<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; max-height: 500px;">
+function callback () {
+    console.log("done");
+}
 
-<p>Please change me!</p>
+function doStuffAsync (func) {
+    // doing something like ajax call to load some file.
+    func();
+}
+
+doStuffAsync(callback);
+// logs "done" after its done loading file. (might take a few seconds)
+</code></pre>
