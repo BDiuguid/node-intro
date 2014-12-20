@@ -25,8 +25,6 @@
         "node-hello-world.html",
         "node-dev-debug.html",
         "node-commonjs.html",
-        "node-common-app.html",
-        "node-common-logger.html",
         "node-common-example.html",
         "npm-intro.html",
         "packagejson-intro.html"

@@ -1,14 +1,14 @@
 <h3>mounting middleware to paths</h3>
 <pre><code class="javascript" data-trim contenteditable style="font-size: 18px; max-height: 500px;">
-    var app = express();
+var app = express();
 
-    // a middleware with no mount path; gets executed for every request to the app
-    function logRequests (req, res, next) {
-        console.log('Time:', Date.now());
-        next();
-    };
+// a middleware with no mount path; gets executed for every request to the app
+function logRequests (req, res, next) {
+    console.log('Time:', Date.now());
+    next();
+};
 
-    app.get('/user', logRequests, function (req, res, next) {
-        res.send('USER');
-    });
+app.get('/user', logRequests, function (req, res, next) {
+    res.send('USER');
+});
 </code></pre>
